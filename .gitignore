@@ -1,3 +1,5 @@
+/NanoAOD_Gen/test/*.root
+
 /Skim_NanoAOD/condor/tmpSub
 /Skim_NanoAOD/sample/*.pyc
 /Skim_NanoAOD/src/*.o
