@@ -1,18 +1,15 @@
 from NanoAOD_Gen_Samples import sampleList_2016, sampleList_2017, sampleList_2018
 from getFilesFromDisk import getFileList_DAS, getNEvents_DAS, getFileList_EOS
-from operator import itemgetter
 
 f1 = open("NanoAOD_Gen_FileLists_cff.sh", "w")
 f2 = open("NanoAOD_Gen_SplitJobs_cff.py", "w")
 allJobs = 0
 allFiles = 0
-#for year in [2016,2017,2018]:
 for year in [2016,2017,2018]:
     splitJobs = {}
     print '--------------------------'
     print  year 
     print  "nFiles\t  nJobs\t Samples"
-    #print  "nEvents\t  Samples"
     print '--------------------------'
     line = ""
     sampleListTmp = eval("sampleList_%i"%year)
@@ -31,7 +28,6 @@ for year in [2016,2017,2018]:
             line += fileList 
             line += '"\n\n'
         nFiles = len(fileList.split(" "))
-        #nevents = getNEvents_DAS(sample)
         files += nFiles
         nJob = 1
         if nFiles >= 5:
@@ -39,7 +35,6 @@ for year in [2016,2017,2018]:
         splitJobs[sampleName] = nJob
         jobs += nJob
         print("%i\t %i\t %s"%(nFiles, nJob, sampleName))
-        #print("%s  %s"%(nevents,sample))
     f1.write(line.encode('ascii'))
     f2.write("Samples_%s = %s \n"%(str(year), str(splitJobs)))
     f2.write("AllFiles_%s = %s \n"%(str(year), str(files)))
