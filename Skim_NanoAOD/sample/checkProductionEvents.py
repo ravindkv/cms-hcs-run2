@@ -11,8 +11,8 @@ for year in [2016,2017,2018]:
     splitJobs = {}
     print '--------------------------'
     print  year 
-    print  "nFiles\t  nJobs\t Samples"
-    #print  "nEvents\t  Samples"
+    #print  "nFiles\t  nJobs\t Samples"
+    print  "nEvents\t  Samples"
     print '--------------------------'
     line = ""
     sampleListTmp = eval("sampleList_%i"%year)
@@ -31,22 +31,22 @@ for year in [2016,2017,2018]:
             line += fileList 
             line += '"\n\n'
         nFiles = len(fileList.split(" "))
-        #nevents = getNEvents_DAS(sample)
+        nevents = getNEvents_DAS(sample)
         files += nFiles
         nJob = 1
         if nFiles >= 5:
             nJob = int (nFiles/5)
         splitJobs[sampleName] = nJob
         jobs += nJob
-        print("%i\t %i\t %s"%(nFiles, nJob, sampleName))
-        #print("%s  %s"%(nevents,sample))
+        #print("%i\t %i\t %s"%(nFiles, nJob, sampleName))
+        print("%s  %s"%(nevents,sample))
     f1.write(line.encode('ascii'))
     f2.write("Samples_%s = %s \n"%(str(year), str(splitJobs)))
     f2.write("AllFiles_%s = %s \n"%(str(year), str(files)))
     f2.write("AllJobs_%s = %s \n"%(str(year), str(jobs)))
     print '=================='
-    print "AllFiles_%i = %i"%(year, files)
-    print "AllJobs_%i = %i"%(year, jobs)
+    # print "AllFiles_%i = %i"%(year, files)
+    # print "AllJobs_%i = %i"%(year, jobs)
     print '=================='
     allFiles += files
     allJobs += jobs
