@@ -33,7 +33,8 @@ old_1_MCType16_preVFP = 'RunIISummer19UL16NanoAODAPVv2-106X_mcRun2_asymptotic_pr
 
 DataType16          ='UL2016_MiniAODv2_NanoAODv9-v1'
 DataType16_hipm     ='HIPM_UL2016_MiniAODv2_NanoAODv9-v1'
-DataType16_hipm_v2  ='ver2_HIPM_UL2016_MiniAODv2_NanoAODv9-v1'
+DataType16_hipm_ver1  ='ver1_HIPM_UL2016_MiniAODv2_NanoAODv9-v1'
+DataType16_hipm_ver2  ='ver2_HIPM_UL2016_MiniAODv2_NanoAODv9-v1'
 #########################################################################################
 
 sampleList_2016 = {
@@ -80,21 +81,25 @@ sampleList_2016 = {
 'HminusM155_postVFP' : '/TTToHminusToCS_M-155_TuneCP5_13TeV-amcatnlo-pythia8/'+MCType16+'/NANOAODSIM',
 'HminusM160_postVFP' : '/TTToHminusToCS_M-160_TuneCP5_13TeV-amcatnlo-pythia8/'+MCType16+'/NANOAODSIM',
 
-'Data_SingleMu_b' : '/SingleMuon/Run2016B-'+DataType16_hipm_v2+'/NANOAOD',
-'Data_SingleMu_c' : '/SingleMuon/Run2016C-'+DataType16_hipm+'/NANOAOD',
-'Data_SingleMu_d' : '/SingleMuon/Run2016D-'+DataType16_hipm+'/NANOAOD',
-'Data_SingleMu_e' : '/SingleMuon/Run2016E-'+DataType16_hipm+'/NANOAOD',
-'Data_SingleMu_f' : '/SingleMuon/Run2016F-'+DataType16_hipm+'/NANOAOD',
-'Data_SingleMu_g' : '/SingleMuon/Run2016G-'+DataType16+'/NANOAOD',
-'Data_SingleMu_h' : '/SingleMuon/Run2016H-'+DataType16+'/NANOAOD',
+'Data_SingleMu_b_ver1_preVFP' : '/SingleMuon/Run2016B-'+DataType16_hipm_ver1+'/NANOAOD',
+'Data_SingleMu_b_ver2_preVFP' : '/SingleMuon/Run2016B-'+DataType16_hipm_ver2+'/NANOAOD',
+'Data_SingleMu_c_preVFP' : '/SingleMuon/Run2016C-'+DataType16_hipm+'/NANOAOD',
+'Data_SingleMu_d_preVFP' : '/SingleMuon/Run2016D-'+DataType16_hipm+'/NANOAOD',
+'Data_SingleMu_e_preVFP' : '/SingleMuon/Run2016E-'+DataType16_hipm+'/NANOAOD',
+'Data_SingleMu_f_preVFP' : '/SingleMuon/Run2016F-'+DataType16_hipm+'/NANOAOD',
+'Data_SingleMu_f_postVFP' : '/SingleMuon/Run2016F-'+DataType16+'/NANOAOD',
+'Data_SingleMu_g_postVFP' : '/SingleMuon/Run2016G-'+DataType16+'/NANOAOD',
+'Data_SingleMu_h_postVFP' : '/SingleMuon/Run2016H-'+DataType16+'/NANOAOD',
 
-'Data_SingleEle_b' : '/SingleElectron/Run2016B-'+DataType16_hipm_v2+'/NANOAOD',
-'Data_SingleEle_c' : '/SingleElectron/Run2016C-'+DataType16_hipm+'/NANOAOD',
-'Data_SingleEle_d' : '/SingleElectron/Run2016D-'+DataType16_hipm+'/NANOAOD',
-'Data_SingleEle_e' : '/SingleElectron/Run2016E-'+DataType16_hipm+'/NANOAOD',
-'Data_SingleEle_f' : '/SingleElectron/Run2016F-'+DataType16_hipm+'/NANOAOD',
-'Data_SingleEle_g' : '/SingleElectron/Run2016G-'+DataType16+'/NANOAOD',
-'Data_SingleEle_h' : '/SingleElectron/Run2016H-'+DataType16+'/NANOAOD',
+'Data_SingleEle_b_ver1_preVFP' : '/SingleElectron/Run2016B-'+DataType16_hipm_ver1+'/NANOAOD',
+'Data_SingleEle_b_ver2_preVFP' : '/SingleElectron/Run2016B-'+DataType16_hipm_ver2+'/NANOAOD',
+'Data_SingleEle_c_preVFP' : '/SingleElectron/Run2016C-'+DataType16_hipm+'/NANOAOD',
+'Data_SingleEle_d_preVFP' : '/SingleElectron/Run2016D-'+DataType16_hipm+'/NANOAOD',
+'Data_SingleEle_e_preVFP' : '/SingleElectron/Run2016E-'+DataType16_hipm+'/NANOAOD',
+'Data_SingleEle_f_preVFP' : '/SingleElectron/Run2016F-'+DataType16_hipm+'/NANOAOD',
+'Data_SingleEle_f_postVFP' : '/SingleElectron/Run2016F-'+DataType16+'/NANOAOD',
+'Data_SingleEle_g_postVFP' : '/SingleElectron/Run2016G-'+DataType16+'/NANOAOD',
+'Data_SingleEle_h_postVFP' : '/SingleElectron/Run2016H-'+DataType16+'/NANOAOD',
 
 'TTbarPowheg_Dilepton_preVFP' : '/TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8/'+MCType16_preVFP+'/NANOAODSIM',
 'TTbarPowheg_Hadronic_preVFP' : '/TTToHadronic_TuneCP5_13TeV-powheg-pythia8/'+MCType16_preVFP+'/NANOAODSIM',
@@ -142,19 +147,37 @@ sampleList_2016 = {
 'TTbarPowheg_Semilept_mtop1695_postVFP'        : '/TTToSemiLeptonic_mtop169p5_TuneCP5_13TeV-powheg-pythia8/'+MCType16+'/NANOAODSIM',
 'TTbarPowheg_Semilept_mtop1755_postVFP'        : '/TTToSemiLeptonic_mtop175p5_TuneCP5_13TeV-powheg-pythia8/'+MCType16+'/NANOAODSIM',
 
+'Wjets_preVFP'      : '/WJetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/'+old_MCType16_preVFP+'/NANOAODSIM',
 'W1jets_preVFP'      : '/W1JetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/'+old_MCType16_preVFP+'/NANOAODSIM',
 'W2jets_preVFP'      : '/W2JetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType16_preVFP_v2+'/NANOAODSIM',
 'W3jets_preVFP'      : '/W3JetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/'+old_MCType16_preVFP+'/NANOAODSIM',
 'W4jets_preVFP'      : '/W4JetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/'+old_MCType16_preVFP+'/NANOAODSIM',
+'Wjets_postVFP'      : '/WJetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType16+'/NANOAODSIM',
 'W1jets_postVFP'      : '/W1JetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType16+'/NANOAODSIM',
 'W2jets_postVFP'      : '/W2JetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/'+old_MCType16+'/NANOAODSIM',
 'W3jets_postVFP'      : '/W3JetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType16+'/NANOAODSIM',
 'W4jets_postVFP'      : '/W4JetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType16_v2+'/NANOAODSIM',
 
 'DYjetsM10to50_preVFP' : '/DYJetsToLL_M-10to50_TuneCP5_13TeV-madgraphMLM-pythia8/'+old_MCType16_preVFP+'/NANOAODSIM',
+'DY1jetsM10to50_preVFP' : '/DY1JetsToLL_M-10to50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType16_preVFP+'/NANOAODSIM',
+'DY2jetsM10to50_preVFP' : '/DY2JetsToLL_M-10to50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType16_preVFP+'/NANOAODSIM',
+'DY3jetsM10to50_preVFP' : '/DY3JetsToLL_M-10to50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType16_preVFP+'/NANOAODSIM',
+'DY4jetsM10to50_preVFP' : '/DY4JetsToLL_M-10to50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType16_preVFP+'/NANOAODSIM',
 'DYjetsM50_preVFP' : '/DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType16_preVFP+'/NANOAODSIM', 
+'DY1jetsM50_preVFP' : '/DY1JetsToLL_M-50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType16_preVFP+'/NANOAODSIM', 
+'DY2jetsM50_preVFP' : '/DY2JetsToLL_M-50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType16_preVFP+'/NANOAODSIM', 
+'DY3jetsM50_preVFP' : '/DY3JetsToLL_M-50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType16_preVFP+'/NANOAODSIM', 
+'DY4jetsM50_preVFP' : '/DY4JetsToLL_M-50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType16_preVFP+'/NANOAODSIM', 
 'DYjetsM10to50_postVFP' : '/DYJetsToLL_M-10to50_TuneCP5_13TeV-madgraphMLM-pythia8/'+old_MCType16+'/NANOAODSIM',
+'DY1jetsM10to50_postVFP' : '/DY1JetsToLL_M-10to50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType16+'/NANOAODSIM',
+'DY2jetsM10to50_postVFP' : '/DY2JetsToLL_M-10to50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType16+'/NANOAODSIM',
+'DY3jetsM10to50_postVFP' : '/DY3JetsToLL_M-10to50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType16+'/NANOAODSIM',
+'DY4jetsM10to50_postVFP' : '/DY4JetsToLL_M-10to50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType16+'/NANOAODSIM',
 'DYjetsM50_postVFP' : '/DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8/'+old_MCType16+'/NANOAODSIM',
+'DY1jetsM50_postVFP' : '/DY1JetsToLL_M-50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType16+'/NANOAODSIM', 
+'DY2jetsM50_postVFP' : '/DY2JetsToLL_M-50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType16+'/NANOAODSIM', 
+'DY3jetsM50_postVFP' : '/DY3JetsToLL_M-50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType16+'/NANOAODSIM', 
+'DY4jetsM50_postVFP' : '/DY4JetsToLL_M-50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType16+'/NANOAODSIM', 
 
 'ST_s_channel_preVFP' : '/ST_s-channel_4f_leptonDecays_TuneCP5_13TeV-amcatnlo-pythia8/'+MCType16_preVFP+'/NANOAODSIM',
 'ST_t_channel_preVFP' : '/ST_t-channel_top_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/'+MCType16_preVFP+'/NANOAODSIM',
@@ -311,7 +334,16 @@ sampleList_2017 = {
 'W2jets'      : '/W2JetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType17+'/NANOAODSIM',
 'W3jets'      : '/W3JetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType17+'/NANOAODSIM',
 'W4jets'      : '/W4JetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType17_v2+'/NANOAODSIM',
+'Wjets'      : '/WJetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType17+'/NANOAODSIM',
 
+'DY1jetsM10to50' : '/DY1JetsToLL_M-10to50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType17_v2+'/NANOAODSIM',
+'DY2jetsM10to50' : '/DY2JetsToLL_M-10to50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType17_v2+'/NANOAODSIM',
+'DY3jetsM10to50' : '/DY3JetsToLL_M-10to50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType17_v2+'/NANOAODSIM',
+'DY4jetsM10to50' : '/DY4JetsToLL_M-10to50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType17_v2+'/NANOAODSIM',
+'DY1jetsM50' : '/DY1JetsToLL_M-50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType17+'/NANOAODSIM', 
+'DY2jetsM50' : '/DY2JetsToLL_M-50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType17+'/NANOAODSIM', 
+'DY3jetsM50' : '/DY3JetsToLL_M-50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType17+'/NANOAODSIM', 
+'DY4jetsM50' : '/DY4JetsToLL_M-50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType17+'/NANOAODSIM', 
 'DYjetsM10to50'      : '/DYJetsToLL_M-10to50_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType17+'/NANOAODSIM',
 'DYjetsM50' : '/DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType17+'/NANOAODSIM',
 
@@ -441,9 +473,19 @@ sampleList_2018 = {
 'W2jets'      : '/W2JetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType18+'/NANOAODSIM',
 'W3jets'      : '/W3JetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType18+'/NANOAODSIM',
 'W4jets'      : '/W4JetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType18_v2+'/NANOAODSIM',
+'Wjets'      : '/WJetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType18+'/NANOAODSIM',
 
+'DY1jetsM10to50' : '/DY1JetsToLL_M-10to50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType18_v2+'/NANOAODSIM',
+'DY2jetsM10to50' : '/DY2JetsToLL_M-10to50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType18_v2+'/NANOAODSIM',
+'DY3jetsM10to50' : '/DY3JetsToLL_M-10to50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType18_v2+'/NANOAODSIM',
+'DY4jetsM10to50' : '/DY4JetsToLL_M-10to50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType18_v2+'/NANOAODSIM',
+'DY1jetsM50' : '/DY1JetsToLL_M-50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType18+'/NANOAODSIM', 
+'DY2jetsM50' : '/DY2JetsToLL_M-50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType18+'/NANOAODSIM', 
+'DY3jetsM50' : '/DY3JetsToLL_M-50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType18+'/NANOAODSIM', 
+'DY4jetsM50' : '/DY4JetsToLL_M-50_MatchEWPDG20_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType18+'/NANOAODSIM', 
 'DYjetsM10to50'      : '/DYJetsToLL_M-10to50_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType18+'/NANOAODSIM',
 'DYjetsM50' : '/DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8/'+MCType18+'/NANOAODSIM',
+
 
 'ST_s_channel' : '/ST_s-channel_4f_leptonDecays_TuneCP5_13TeV-amcatnlo-pythia8/'+MCType18+'/NANOAODSIM',
 'ST_t_channel' : '/ST_t-channel_top_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/'+MCType18+'/NANOAODSIM',
